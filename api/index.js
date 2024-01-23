@@ -21,7 +21,7 @@ app.use(
   })
 )
 
-// defineer startpunt voor statische bestanden
+// defineer startpunt voor statische bestandena
 app.use(express.static('web'))
 
 // definieer startpunten voor de API-server
@@ -57,7 +57,7 @@ function echoRequest(request, response) {
 function getCategories(request, response) {
   console.log('API ontvangt /api/categories/')
   // TODO: breid database uit zodat onderstaande query een lijstje categoriën levert.
-  const sqlOpdracht = db.prepare('SELECT categories.name AS category_name FROM categories ORDER BY id ASC')
+  const sqlOpdracht = db.prepare('SELECT categories.name AS category_name FROM categories ORDER BY name ASC')
   const data = sqlOpdracht.all()
   // console.log(JSON.stringify(data, null, 2))
   response.status(200).send(data)
