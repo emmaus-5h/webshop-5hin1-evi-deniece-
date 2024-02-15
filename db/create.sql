@@ -11,31 +11,22 @@ CREATE TABLE products (
 );
 CREATE TABLE sizes (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
-  name VARCHAR(255),
-  description TEXT,
-  price NUMERIC(10, 2)
+  colorsNAME VARCHAR(20)
 );
 CREATE TABLE colors (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
-  name VARCHAR(255),
-  description TEXT,
-  price NUMERIC(10, 2)
+  products_id INTEGER,
+  kleur_id INTEGER
 );
 CREATE TABLE catagories (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
-  name VARCHAR(255),
-  description TEXT,
-  price NUMERIC(10, 2)
+  cijfer_catagories VARCHAR (10),
+  reden_catagories VARCHAR (20)
 );
-CREATE TABLE  (
+CREATE TABLE populariteit (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
-  name VARCHAR(255),
-  description TEXT,
-  price NUMERIC(10, 2)
+  hoeveelheid_populariteit VARCHAR (30),
+  reden_populariteit VARCHAR (40)
 );
 
 --
@@ -46,6 +37,8 @@ CREATE TABLE  (
 --
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
+
+insert into colors 
 
 insert into products (name, description, code, price) values ('Buttplug', 'Een stainless steel buttplug gemaakt voor genot en plezier voor de anus. Versierd met een roze diamant voor de ultieme sensatie.', '816905633-0', 14.99);
 insert into products (name, description, code, price) values ('Analbeads', 'Een silicone langwerpige analbeads staaf gemaakt voor genot en plezier voor de anus.', '077030122-3', 12.50);
@@ -59,3 +52,18 @@ insert into products (name, description, code, price) values ('Tong Vibrator', '
 insert into products (name, description, code, price) values ('Love Package', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 24.99);
 insert into products (name, description, code, price) values ('Condooms', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 6.99);
 insert into products (name, description, code, price) values ('Satisfyer', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.', '492662523-7', 15.99);
+
+
+insert into colors (colorsNAME) values ('roze');
+insert into colors (colorsNAME) values ('zwart');
+insert into colors (colorsNAME) values ('zilver);
+insert into colors (colorsNAME) values ('licht roze');
+insert into colors (colorsNAME) values ('paars');
+
+
+insert into sortBYcolor (products_id, color_id) values (1,2);
+insert into sortBYcolor (products_id, color_id) values (1,2);
+insert into sortBYcolor (products_id, color_id) values (1,2);
+insert into sortBYcolor (products_id, color_id) values (1,2);
+insert into sortBYcolor (products_id, color_id) values (1,2);
+  insert into sortBYcolor (products_id, color_id) values (1,2);
