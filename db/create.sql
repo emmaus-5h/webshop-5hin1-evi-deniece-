@@ -29,7 +29,8 @@ CREATE TABLE populariteit (
 );
 CREATE TABLE rate (
 id INTEGER PRIMARY KEY AUTOINCREMENT,
-sterren VARCHAR (10),
+sterren TEXT,
+  );
 
 
 --
@@ -69,20 +70,20 @@ insert into colors (products_id, color_id) values (5,2);
   insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('erg populair', 'wordt veel verkocht en aangeraden');
 insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('echt heeeeeeeeeeeeeeeeeeel populair echt heeeeeeeeeeeeeeeel erg popu', 'komt niet meer terug want het wordt zoveel verkocht');
 
-insert into sizes (maat) values (XS);
-insert into sizes (maat) values (S);
-insert into sizes (maat) values (M);
-insert into sizes (maat) values (L);
-insert into sizes (maat) values (XL);
+insert into sizes (maat) values ('XS');
+insert into sizes (maat) values ('S');
+insert into sizes (maat) values ('M');
+insert into sizes (maat) values ('L');
+insert into sizes (maat) values ('XL');
 
-insert into catagories (geslacht) values (Man);
-insert into catagories (geslacht) values (Vrouw);
+insert into catagories (geslacht) values ('Man');
+insert into catagories (geslacht) values ('vrouw');
 
-insert into rate (sterren) values (heel slecht);
-insert into rate (sterren) values (slecht);
-insert into rate (sterren) values (matig);
-insert into rate (sterren) values (goed);
-insert into rate (sterren) values (fucking goed echt heel lekker);
+insert into rate (sterren) values ('heel slecht');
+insert into rate (sterren) values ('slecht');
+insert into rate (sterren) values ('matig');
+insert into rate (sterren) values ('goed');
+insert into rate (sterren) values ('fucking goed echt heel lekker');
 
 
 
