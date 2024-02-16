@@ -11,7 +11,7 @@ CREATE TABLE products (
 );
 CREATE TABLE sizes (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  colorsNAME VARCHAR(20)
+  maat VARCHAR(20)
 );
 CREATE TABLE colors (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -20,8 +20,7 @@ CREATE TABLE colors (
 );
 CREATE TABLE catagories (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  cijfer_catagories VARCHAR (10),
-  reden_catagories VARCHAR (20)
+  geslacht VARCHAR (10),
 );
 CREATE TABLE populariteit (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -54,7 +53,7 @@ insert into products (name, description, code, price) values ('Satisfyer', 'Perf
 
 insert into colors (colorsNAME) values ('roze');
 insert into colors (colorsNAME) values ('zwart');
-insert into colors (colorsNAME) values ('zilver);
+insert into colors (colorsNAME) values ('zilver');
 
 
 insert into sortBYcolor (products_id, color_id) values (1,2);
@@ -71,4 +70,20 @@ insert into sortBYcolor (products_id, color_id) values (5,2);
   insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('redelijk populair', 'wordt verkocht');
   insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('populair', 'Staat in de top 10');
   insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('erg populair', 'wordt veel verkocht en aangeraden');
+insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('echt heeeeeeeeeeeeeeeeeeel populair echt heeeeeeeeeeeeeeeel erg popu', 'komt niet meer terug want het wordt zoveel verkocht');
+
+insert into sizes (maat) values (XS);
+insert into sizes (maat) values (S);
+insert into sizes (maat) values (M);
+insert into sizes (maat) values (L);
+insert into sizes (maat) values (XL);
+
+insert into catagories (geslacht) values (Man);
+insert into catagories (geslacht) values (Vrouw);
+
+
+
+
+
+
   
