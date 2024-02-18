@@ -4,7 +4,7 @@
 
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT, 
-  code numeric
+  code numeric,
   name TEXT,
   description TEXT,
   price NUMERIC,
@@ -76,7 +76,7 @@ insert into colors (products_id, color_id) values (3,5);
 insert into colors (products_id, color_id) values (4,2);
 insert into colors (products_id, color_id) values (5,1);
 insert into colors (products_id, color_id) values (5,2);
-  insert into colors (products_id, color_id) values (6,8); 
+insert into colors (products_id, color_id) values (6,8); 
 
   insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('niet populair', 'werkt niet goed');
   insert into populariteit (hoeveelheid_populariteit, reden_populariteit) values ('redelijk populair', 'wordt verkocht');
@@ -91,7 +91,7 @@ insert into sizes (maat) values ('L');
 insert into sizes (maat) values ('XL');
 
 insert into catagories (geslacht) values ('Man');
-insert into catagories (geslacht) values ('vrouw');
+insert into catagories (geslacht) values ('Vrouw');
 
 insert into rate (sterren) values ('heel slecht');
 insert into rate (sterren) values ('slecht');
