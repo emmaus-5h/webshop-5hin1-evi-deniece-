@@ -12,7 +12,7 @@ CREATE TABLE products (
   colors_id integer,
   catagories_id integer,
   populariteit_id integer,
-  rate_id integer
+  rate_id integer,
 );
 CREATE TABLE sizes (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -99,11 +99,3 @@ insert into rate (sterren) values ('matig');
 insert into rate (sterren) values ('goed');
 insert into rate (sterren) values ('heel goed, echt heel lekker');
 
-
-
-
-
-
-
-
-  
